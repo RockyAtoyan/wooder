@@ -1119,6 +1119,7 @@ section {
 
 .about .item_lines__main {
     position: absolute;
+    z-index: 1;
     top: -50px;
     right: 29px;
     width: 150px;
