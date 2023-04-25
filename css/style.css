@@ -785,6 +785,7 @@ section {
     gap: 10px;
     font-weight: 700;
     padding-bottom: 10px;
+    color: #000;
 }
 
 .item_button:after {
