@@ -66,8 +66,7 @@ const pageSlider = new Swiper('.wrapper', {
         init: function () {
             menuActive()
             setScrollType()
-            console.log(window.innerWidth)
-            pageSlider.params.freeMode.enabled = window.innerWidth <= 425;
+            // pageSlider.params.freeMode.enabled = window.innerWidth <= 425;
         },
         slideChange: function () {
             menuActive()
@@ -77,8 +76,7 @@ const pageSlider = new Swiper('.wrapper', {
         },
         resize: function () {
             setScrollType()
-            console.log(window.innerWidth)
-            pageSlider.params.freeMode.enabled = window.innerWidth <= 425;
+            // pageSlider.params.freeMode.enabled = window.innerWidth <= 425;
         }
     },
     observer: true,
