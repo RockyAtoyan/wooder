@@ -75,7 +75,6 @@ const pageSlider = new Swiper('.wrapper', {
             setScrollType()
         },
         resize: function () {
-            debugger
             setScrollType()
             pageSlider.params.freeMode.enabled = window.innerWidth <= 425;
         }
