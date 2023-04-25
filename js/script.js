@@ -47,11 +47,9 @@ const pageSlider = new Swiper('.wrapper', {
     breakpoints:{
         320:{
             autoHeight:true,
-            freeMode: true,
-
         },
         600:{
-            autoHeight:false
+            autoHeight:false,
         },
 
     },
@@ -68,6 +66,7 @@ const pageSlider = new Swiper('.wrapper', {
         init: function () {
             menuActive()
             setScrollType()
+            pageSlider.params.freeMode.enabled = window.innerWidth <= 425;
         },
         slideChange: function () {
             menuActive()
@@ -76,7 +75,9 @@ const pageSlider = new Swiper('.wrapper', {
             setScrollType()
         },
         resize: function () {
+            debugger
             setScrollType()
+            pageSlider.params.freeMode.enabled = window.innerWidth <= 425;
         }
     },
     observer: true,
