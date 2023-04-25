@@ -140,6 +140,18 @@ window.addEventListener('click',(event) => {
     }
 })
 
+window.addEventListener('touchmove',(event) => {
+    if(event.target.parentNode.classList.contains('burger') ||event.target.classList.contains('burger') ){
+        generalMenu.classList.toggle('active')
+        burger.classList.toggle('active')
+    }else {
+        if(!event.target.parentNode.classList.contains('general_menu') && !event.target.parentNode.classList.contains('burger_menu')) {
+            generalMenu.classList.remove('active')
+            burger.classList.remove('active')
+        }
+    }
+})
+
 
 function setScrollType() {
     if (wrapper.classList.contains('_free')) {
